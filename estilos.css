@@ -1,0 +1,836 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D5CBBC;
+    padding: 10px 20px;
+}
+
+.logo {
+    flex-grow: 1; /* El logo ocupa todo el espacio disponible */
+    text-align: center;
+}
+
+.logo img {
+    width: 10%; /* Ajusta el ancho según tu necesidad */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Las secciones se alinean a la derecha */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #1C77C3;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position:absolute;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1C77C3;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display:flex;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #2E5266;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos generales */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.square {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden; /* Para ocultar el desbordamiento del pseudo-elemento */
+}
+
+.square img {
+    width: 200px;
+    height: 200px;
+}
+
+.square h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    color: white; /* Color del texto */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.square::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad de color negro */
+    z-index: 0;
+    opacity: 1; /* Opacidad */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    
+}
+
+.square:hover::before {
+    opacity: 0; /* Al pasar el mouse, oculta el color negro */
+}
+.image-1-icon {
+    position: absolute;
+    top: 300px;
+    left: 797px;
+    width: 484px;
+    height: 344px;
+    object-fit: cover;
+}
+.vincent-van-gogh {
+    margin-block-start: 0;
+    margin-block-end: 20px;
+  
+}
+.van-gogh-comenz {
+    margin: 0;
+}
+.vincent-van-gogh-container {
+    position: absolute;
+    top: 344px;
+    left: 136px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    display: inline-block;
+    width: 539px;
+}
+.a-lo-largo-container {
+    position: absolute;
+    top: 701px;
+    left: 795px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    display: inline-block;
+    width: 479px;
+    height: 688px;
+}
+.a-pesar-de {
+    position: absolute;
+    top: 1126px;
+    left: 790px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    display: inline-block;
+    width: 479px;
+    height: 688px;
+}
+.desktop-1-child {
+    position: absolute;
+    top: 27px;
+    left: 71px;
+    width: 1366px;
+    height: 142px;
+}
+
+
+.desktop-1-item {
+    position: absolute;
+    top: 1595px;
+    left: 0px;
+    width: 1440px;
+    height: 121px;
+}
+
+.imagencuatro-1-icon {
+    position: absolute;
+    top: 721px;
+    left: 136px;
+    width: 539px;
+    height: 362px;
+    object-fit: cover;
+}
+.van2-1-icon {
+    position: absolute;
+    top: 1146px;
+    left: 136px;
+    width: 539px;
+    height: 378px;
+    object-fit: cover;
+}
+.desktop-1 {
+    width: 100%;
+    position: relative;
+    background-color: #d5cbbc;
+    height: 1716px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: Poppins;
+    
+}
+
+.desktop-2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+   color: #1C77C3;
+}
+
+.los-aos-en {
+    position: absolute;
+    top: 500px;
+    left: 787px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    display: inline-block;
+    width: 479px;
+    height: 688px;
+}
+.post-impresionismo-o {
+    position: absolute;
+    top: 500px;
+    left: 176px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    display: inline-block;
+    width: 479px;
+    height: 688px;
+}
+.post-impresionismo-o1 {
+    position: absolute;
+    top: 1262px;
+    left: 116px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: justify;
+    display: inline-block;
+    width: 1206px;
+    height: 137px;
+    }
+.desktop-2-child {
+    position: absolute;
+    top: 27px;
+    left: 71px;
+    width: 1366px;
+    height: 142px;
+}
+.white-elegant-typography-fashi {
+    position: absolute;
+    top: -79px;
+    left: 541px;
+    width: 425px;
+    height: 432px;
+    object-fit: cover;
+}
+
+.desktop-2-item {
+    position: absolute;
+    top: 1595px;
+    left: 0px;
+    width: 1440px;
+    height: 121px;
+}
+.white-elegant-typography-fashi1 {
+    position: absolute;
+    top: 1508px;
+    left: 634px;
+    width: 312px;
+    height: 317px;
+    object-fit: cover;
+}
+.el-mundo-de-van-gogh1-1-icon {
+    position: absolute;
+    top: 100px;
+    left: 109px;
+    width: 1213px;
+    height: 335px;
+    object-fit: cover;
+}
+.desktop-2 {
+    width: 100%;
+    position: relative;
+    background-color: #d5cbbc;
+    height: 1716px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: Poppins;
+}
+.desktop-2-item {
+    position: absolute;
+    top: 1595px;
+    left: 0px;
+    width: 1440px;
+    height: 121px;
+    }
+    
+    .image-2-icon {
+    position: absolute;
+    top: 870px;
+    left: 109px;
+    width: 1213px;
+    height: 309px;
+    object-fit: cover;
+    }
+    
+   
+contacto
+.desktop-3-child {
+    position: absolute;
+    top: 27px;
+    left: 71px;
+    width: 1366px;
+    height: 142px;
+}
+.white-elegant-typography-fashi {
+    position: absolute;
+    top: -79px;
+    left: 541px;
+    width: 425px;
+    height: 432px;
+    object-fit: cover;
+}
+.historia {
+    position: absolute;
+    top: 115px;
+    left: 136px;
+    font-weight: 500;
+    display: inline-block;
+    width: 165px;
+    height: 32px;
+}
+.artistas {
+    position: absolute;
+    top: 115px;
+    left: 269px;
+    font-weight: 500;
+    display: inline-block;
+    width: 165px;
+    height: 32px;
+}
+.tienda {
+    position: absolute;
+    top: 115px;
+    left: 386px;
+    font-weight: 500;
+    display: inline-block;
+    width: 165px;
+    height: 32px;
+}
+.contacto {
+    position: absolute;
+    top: 100px;
+    left: 473px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4b84db;
+    text-align: left;
+    display: inline-block;
+    width: 165px;
+    height: 32px;
+}
+.nombre-y-apellido {
+    position: absolute;
+    top: 150px;
+    left: 473px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    width: 205px;
+    height: 32px;
+}
+.mail {
+    position: absolute;
+    top: 240px;
+    left: 471px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    width: 205px;
+    height: 32px;
+}
+.telefono {
+    position: absolute;
+    top: 325px;
+    left: 471px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    width: 205px;
+    height: 32px;
+}
+.consulta {
+    position: absolute;
+    top: 410px;
+    left: 471px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    width: 205px;
+    height: 32px;
+}
+.galera {
+    position: absolute;
+    top: 115px;
+    left: 959px;
+    font-weight: 500;
+    display: inline-block;
+    width: 165px;
+    height: 32px;
+}
+.contacto1 {
+    position: absolute;
+    top: 115px;
+    left: 1109px;
+    font-weight: 500;
+    display: inline-block;
+    width: 165px;
+    height: 32px;
+}
+.desktop-3-item {
+    position: absolute;
+    top: 1595px;
+    left: 0px;
+    width: 1440px;
+    height: 121px;
+}
+.white-elegant-typography-fashi1 {
+    position: absolute;
+    top: 1508px;
+    left: 634px;
+    width: 312px;
+    height: 317px;
+    object-fit: cover;
+}
+.image-3-icon {
+    position: absolute;
+    top: 100px;
+    left: 115px;
+    width: 315px;
+    height: 457px;
+    object-fit: cover;
+}
+.desktop-3-inner {
+    position: absolute;
+    top: 354px;
+    left: 471px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 487px;
+    height: 42px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 180px;
+    left: 471px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 487px;
+    height: 42px;
+}
+.desktop-3-child1 {
+    position: absolute;
+    top: 550px;
+    left: 826px;
+    border-radius: 5px;
+    background-color: #4b84db;
+    width: 126px;
+    height: 28px;
+}
+.desktop-3-child2 {
+    position: absolute;
+    top: 270px;
+    left: 471px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 487px;
+    height: 42px;
+}
+.enviar {
+    position: absolute;
+    top: 550px;
+    left: 786px;
+    font-weight: 500;
+    display: inline-block;
+    width: 205px;
+    height: 32px;
+}
+.desktop-3-child3 {
+    position: absolute;
+    top: 440px;
+    left: 471px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 487px;
+    height: 91px;
+}
+.image-4-icon {
+    position: absolute;
+    top: 100px;
+    left: 1002px;
+    width: 317px;
+    height: 457px;
+    object-fit: cover;
+}
+.desktop-3 {
+    width: 100%;
+    position: relative;
+    background-color: #d5cbbc;
+    height: 849px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.desktop-5-child {
+  	position: absolute;
+  	top: 27px;
+  	left: 71px;
+  	width: 1366px;
+  	height: 142px;
+}
+.white-elegant-typography-fashi {
+  	position: absolute;
+  	top: -79px;
+  	left: 541px;
+  	width: 425px;
+  	height: 432px;
+  	object-fit: cover;
+}
+
+
+tienda
+.primeros-pasos {
+  	position: absolute;
+  	top: 470px;
+  	left: 158px;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	color: #4b84db;
+  	display: inline-block;
+  	width: 221px;
+  	height: 32px;
+}
+.primeros-pasos1 {
+  	position: absolute;
+  	top: 848px;
+  	left: 158px;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	color: #4b84db;
+  	display: inline-block;
+  	width: 221px;
+  	height: 32px;
+}
+.primeros-pasos2 {
+  	position: absolute;
+  	top: 470px;
+  	left: 609px;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	color: #4b84db;
+  	display: inline-block;
+  	width: 221px;
+  	height: 32px;
+}
+.primeros-pasos3 {
+  	position: absolute;
+  	top: 848px;
+  	left: 609px;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	color: #4b84db;
+  	display: inline-block;
+  	width: 221px;
+  	height: 32px;
+}
+.primeros-pasos4 {
+  	position: absolute;
+  	top: 470px;
+  	left: 1060px;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	color: #4b84db;
+  	display: inline-block;
+  	width: 221px;
+  	height: 32px;
+}
+.primeros-pasos5 {
+  	position: absolute;
+  	top: 848px;
+  	left: 1060px;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	color: #4b84db;
+  	display: inline-block;
+  	width: 221px;
+  	height: 32px;
+}
+.vincent-van-gogh {
+  	margin: 0;
+}
+.vincent-van-gogh-container {
+  	position: absolute;
+  	top: 497px;
+  	left: 81px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 375px;
+  	height: 73px;
+}
+.vincent-van-gogh-container1 {
+  	position: absolute;
+  	top: 875px;
+  	left: 81px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 375px;
+  	height: 73px;
+}
+.vincent-van-gogh-container2 {
+  	position: absolute;
+  	top: 497px;
+  	left: 532px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 375px;
+  	height: 73px;
+}
+.vincent-van-gogh-container3 {
+  	position: absolute;
+  	top: 875px;
+  	left: 532px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 375px;
+  	height: 73px;
+}
+.vincent-van-gogh-container4 {
+  	position: absolute;
+  	top: 497px;
+  	left: 983px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 375px;
+  	height: 73px;
+}
+.vincent-van-gogh-container5 {
+  	position: absolute;
+  	top: 875px;
+  	left: 983px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 375px;
+  	height: 73px;
+}
+.div {
+  	position: absolute;
+  	top: 545px;
+  	left: 206px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 125px;
+  	height: 25px;
+}
+.div1 {
+  	position: absolute;
+  	top: 923px;
+  	left: 206px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 125px;
+  	height: 25px;
+}
+.div2 {
+  	position: absolute;
+  	top: 545px;
+  	left: 657px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 125px;
+  	height: 25px;
+}
+.div3 {
+  	position: absolute;
+  	top: 923px;
+  	left: 657px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 125px;
+  	height: 25px;
+}
+.div4 {
+  	position: absolute;
+  	top: 545px;
+  	left: 1108px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 125px;
+  	height: 25px;
+}
+.div5 {
+  	position: absolute;
+  	top: 923px;
+  	left: 1108px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 125px;
+  	height: 25px;
+}
+
+.desktop-5-item {
+  	position: absolute;
+  	top: 1595px;
+  	left: 0px;
+  	width: 1440px;
+  	height: 121px;
+}
+.white-elegant-typography-fashi1 {
+  	position: absolute;
+  	top: 1508px;
+  	left: 634px;
+  	width: 312px;
+  	height: 317px;
+  	object-fit: cover;
+}
+.image-5-icon {
+  	position: absolute;
+  	top: 235px;
+  	left: 129px;
+  	width: 279px;
+  	height: 216px;
+  	object-fit: cover;
+}
+.image-8-icon {
+  	position: absolute;
+  	top: 613px;
+  	left: 129px;
+  	width: 279px;
+  	height: 216px;
+  	object-fit: cover;
+}
+.image-6-icon {
+  	position: absolute;
+  	top: 235px;
+  	left: 580px;
+  	width: 279px;
+  	height: 216px;
+  	object-fit: cover;
+}
+.image-9-icon {
+  	position: absolute;
+  	top: 613px;
+  	left: 580px;
+  	width: 279px;
+  	height: 216px;
+  	object-fit: cover;
+}
+.image-7-icon {
+  	position: absolute;
+  	top: 235px;
+  	left: 1031px;
+  	width: 279px;
+  	height: 216px;
+  	object-fit: cover;
+}
+.image-10-icon {
+  	position: absolute;
+  	top: 613px;
+  	left: 1031px;
+  	width: 279px;
+  	height: 216px;
+  	object-fit: cover;
+}
+.desktop-5 {
+  	width: 100%;
+  	position: relative;
+  	background-color: #d5cbbc;
+  	height: 1092px;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 15px;
+  	color: #000;
+  	font-family: Poppins;
+}
+
+
+
